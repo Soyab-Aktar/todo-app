@@ -1,0 +1,51 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.inputTaskContainer{
+  display: flex;
+  gap: 10px;
+}
+.allTask{
+  border: 2px solid mediumaquamarine;
+  margin-top: 12px;
+  text-align: justify;
+  padding: 12px;
+  border-radius:  8px; ;
+}
+.taskContainer{
+  display: flex;
+}
+.taskElement{
+  display: flex;
+  gap: 18px;
+  /* background-color: red; */
+}
+.inputHome{
+  width: 500px;
+  height: 50px;
+  font-size: 18px;
+  padding: 8px;
+  border: 2px solid mediumaquamarine;
+  border-radius: 8px;
+}
+.checkbox {
+  width: 24px;
+  height: 24px;
+  accent-color: mediumaquamarine;
+}
+.addbtn{
+  background-color: mediumaquamarine;
+  color: black;
+}
+
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
