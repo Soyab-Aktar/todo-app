@@ -3,25 +3,33 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .inputTaskContainer{
   display: flex;
   gap: 10px;
+}
+h1{
+  color: mediumaquamarine;
 }
 .allTask{
   border: 2px solid mediumaquamarine;
   margin-top: 12px;
   text-align: justify;
   padding: 12px;
-  border-radius:  8px; ;
+  border-radius:  8px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 .taskContainer{
   display: flex;
 }
 .taskElement{
   display: flex;
+  align-items: center;
   gap: 18px;
-  /* background-color: red; */
 }
 .inputHome{
   width: 500px;
@@ -32,13 +40,21 @@
   border-radius: 8px;
 }
 .checkbox {
-  width: 24px;
-  height: 24px;
-  accent-color: mediumaquamarine;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: mediumaquamarine;
+  border: 2px solid mediumspringgreen;
+}
+.checkbox:hover{
+  background-color: black;
+  border: 2px solid mediumaquamarine;
+  cursor: pointer;
+
 }
 .addbtn{
-  background-color: mediumaquamarine;
-  color: black;
+  background-color: black;
+  border: 2px solid mediumaquamarine;
 }
 
 

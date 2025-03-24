@@ -5,21 +5,24 @@ function App() {
 
   const [task,setTask] = useState('');
   const [tasks,setTasks] = useState([]);
+  
 
   const addTask = () =>{
     if (task.trim() === '') return;
-    console.log(task);
     setTasks([...tasks,task]);
     setTask('');
-    console.log(tasks);
   };
 
+  const removeTask = (index) => {
+    const updateTask = tasks.filter((_,i)=>i !==index);
+    setTasks(updateTask);
+  }
 
   return (
     <>
       <h1>ToDo App</h1>
+      <div className='WholeContainer'>
       <div className='inputTaskContainer'>
-
         <input className='inputHome' type="text" value={task} id="inputTaskData" onChange={(e)=>setTask(e.target.value)} placeholder='Enter Your Task'/>
 
         <button className='addbtn' onClick={addTask}>Add</button>
@@ -28,11 +31,13 @@ function App() {
         {
           tasks.map((task,index)=>(
             <div className='taskElement'>
-            <input type="checkbox" className='checkBox'/>
-             <h2 key={index}>{task}</h2> 
+            <div className='checkbox' onClick={()=> removeTask(index)}></div>
+             <span key={index}>{task}</span> 
             </div>
           ))
         }
+      </div>
+
       </div>
     </>
   )
